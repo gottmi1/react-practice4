@@ -3,7 +3,7 @@ import classes from "./HeaderCartButton.module.css";
 
 const HedaerCartButton = (props) => {
   return (
-    <button className={classes.button} onClikc={props.onClick}>
+    <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
         <CartIcon />
       </span>

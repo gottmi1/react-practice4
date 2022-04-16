@@ -11,7 +11,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>React Meals</h1>
-        <Button />
+        <Button onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
         {/* 클래스명에 -가 있으면 .표기법으로 접근 할 수 없기 때문에 이렇게 표기 */}

@@ -4,7 +4,7 @@ import Meals from "./componenets/Meals/Meals";
 import Cart from "./componenets/Cart/Cart";
 
 function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
+  const [cartIsShown, setCartIsShown] = useState(true);
 
   const showCartHandler = () => {
     setCartIsShown(true);
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Fragment>
-      <Cart />
+      {cartIsShown && <Cart onClose={hideCartHanlder} />}
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
