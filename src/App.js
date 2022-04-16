@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./componenets/Layout/Header";
 import Meals from "./componenets/Meals/Meals";
 import Cart from "./componenets/Cart/Cart";
-import CartProvider from "./stroe/Cart-Provider";
+import CartProvider from "./store/Cart-Provider";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
